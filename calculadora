@@ -1,0 +1,119 @@
+Algoritmo CalculadoraFuncional;
+
+Var
+
+V1, V2:Real;
+
+operação:inteiro;
+
+
+ Procedimento Entrada;
+
+
+Início
+
+
+  Escreva("Digite o primeiro número");
+
+
+  Leia(V1);
+
+
+  Escreva("Digite o segundo número");
+
+
+  Leia(V2);
+
+Fim;
+
+   Função Soma(X,Y:Real):Real;
+
+
+ Início
+
+
+  Soma←X+Y;
+
+Fim;
+
+
+ Função Subtração(X,Y:Real):Real;
+
+
+ Início
+
+
+Subtração←X-Y;
+
+Fim;
+
+Função Multiplicação(X,Y:Real):Real;
+
+
+ Início
+
+
+  Multiplicação←X*Y;
+
+Fim;
+
+
+   Função Divisão(X,Y:Real):Real;
+
+
+ Início
+
+
+  Divisão←X/Y;
+
+Fim;
+
+
+Início
+
+
+  Escreva("Calculadora Básica");
+
+
+  Escreva("Selecione o tipo de operação desejada");
+
+
+  Escreva("1⇽Soma");
+
+
+  Escreva("2⇽Subtração"); 
+
+
+  Escreva("3⇽Multiplicação");
+
+
+  Escreva("4⇽Divisão");
+
+
+  Leia(operação);
+
+
+   Se(operação>=1) e (operação<=4)
+
+
+     Então Entrada;
+
+ Escolha uma operação 
+
+  1: Escreva("Resultado da soma foi:",Soma(V1,V2)  );
+
+
+  2: Escreva("Resultado da subtração foi:",Subtração(V1,V2) );
+
+
+  3: Escreva("Resultado da multiplicação foi:",Multiplicação(V1,V2) );
+
+
+  4: Escreva("Resultado da divisão foi:",Divisão(V1,V2) );
+
+
+  Senão Escreva("operação inválida");
+
+  FimSe;
+
+Fim.
