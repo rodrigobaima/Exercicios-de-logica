@@ -1,0 +1,85 @@
+A prefeitura de uma cidade fez uma pesquisa entre seus habitantes, coletando dados sobre salário e número de filhos de cada família. A prefeitura deseja saber, para fins de planejamento:
+a) A média do salário da família;
+b) A média do número de filhos;
+c) O maior salário;
+d) O percentual de pessoas com o salário até R$2.000,00
+O final da leitura de dados se dará com a entrada de um salário negativo.
+
+Algoritmo Prefeitura;
+
+
+
+VAR
+
+salario,medsalarial, : Real
+
+maiorsalario,totalsalario, : Real
+
+totalfamilia,totalfilhos, : Inteiro
+
+medfilhos,filhos, : Inteiro
+
+percent2,totalsalario2; : Real
+
+
+Início
+
+salario=0,medsalarial=0,
+
+maiorsalario=0,totalsalario=0,
+
+totalfamilia=0,totalfilhos=0,
+
+medfilhos=0,filhos=0,
+
+percent2=0,totalsalario2=0;
+
+Escreva("Qual o salário do habitante?");
+
+Leia(salario);
+
+Escreva("Quantos filhos você tem?");
+
+Leia(filhos);
+
+  Enquanto(salario>0) Faça
+
+    totalsalario= totalsalario+salario;
+
+    totalfilhos= totalfilhos+filhos;
+
+    totalfamilia=totalfamilia+1;
+
+     Se(salario<=2000) Então
+
+       totalsalario2=totalsalario2+1;
+
+     Se(salario>maiorsalario) Então
+
+       maiorsalario=salario;
+
+     Escreva("Qual o seu salario?");
+
+     Leia(salario);
+
+     Escreva("Quantos filhos você tem?");
+
+     Leia(filhos);
+
+  FimEnquanto;
+
+medsalarial=totalsalario/totalfamilia;
+
+medfilhos=totalfilhos/totalfamilia;
+
+percent2=(totalsalario2/totalfamilia).100;
+
+Escreva("A média de salário da população é",medsalarial);
+
+Escreva("A média do número de filhos da população é",medfilhos);
+
+Escreva("O maior salario é",maiorsalario);
+
+Escreva("Percentual de pessoas que recebem até R$2000,00 é",percent2);
+
+Fim.
